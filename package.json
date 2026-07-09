@@ -1,0 +1,25 @@
+{
+  "name": "learn",
+  "module": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "bun test",
+    "test:01": "bun test test/01_variables_basicos.test.js",
+    "test:02": "bun test test/02_condicionales.test.js",
+    "test:03": "bun test test/03_strings.test.js",
+    "test:04": "bun test test/04_loops.test.js",
+    "test:05": "bun test test/05_arrays_basicos.test.js",
+    "test:06": "bun test test/06_arrays_manipulacion.test.js",
+    "test:07": "bun test test/07_objetos.test.js",
+    "test:08": "bun test test/08_orden_superior.test.js",
+    "test:09": "bun test test/09_ordenamiento_busqueda.test.js",
+    "test:10": "bun test test/10_recursion.test.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
