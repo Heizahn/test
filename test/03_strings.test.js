@@ -53,7 +53,7 @@ describe("03 — Strings", () => {
     });
 
     test("ignora números, espacios y símbolos", () => {
-      expect(contarVocales("h0l4")).toBe(1);    // el "0" cuenta como "o"?
+      expect(contarVocales("h0l4")).toBe(0);
       expect(contarVocales("!!!")).toBe(0);
     });
 
