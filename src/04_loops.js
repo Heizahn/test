@@ -11,6 +11,7 @@
 //          sumaPares(1) -> 0.
 function sumaPares(n) {
   // TODO: implement
+
 }
 
 // factorial: Devuelve el factorial de n (n! = n * (n-1) * ... * 1).
@@ -20,6 +21,7 @@ function sumaPares(n) {
 //          factorial(0) -> 1.
 function factorial(n) {
   // TODO: implement
+
 }
 
 // fizzbuzz: Devuelve un array con los números del 1 al n, sustituyendo:
@@ -33,6 +35,7 @@ function factorial(n) {
 //                           11, "Fizz", 13, 14, "FizzBuzz"].
 function fizzbuzz(n) {
   // TODO: implement
+
 }
 
 // tablaMultiplicar: Devuelve un array con la tabla de multiplicar de `num`,
@@ -43,6 +46,7 @@ function fizzbuzz(n) {
 //          tablaMultiplicar(5, 0) -> [0].
 function tablaMultiplicar(num, hasta) {
   // TODO: implement
+
 }
 
 export { sumaPares, factorial, fizzbuzz, tablaMultiplicar };

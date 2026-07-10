@@ -4,7 +4,7 @@ import {
   factorial,
   fizzbuzz,
   tablaMultiplicar,
-} from "../src/06_loops.js";
+} from "../src/04_loops.js";
 
 describe("04 — Bucles", () => {
   describe("sumaPares", () => {

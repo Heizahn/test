@@ -10,6 +10,7 @@
 // Ejemplo: maximo([3, 1, 4, 1, 5, 9, 2, 6]) -> 9.
 function maximo(arr) {
   // TODO: implement
+
 }
 
 // minimo: Devuelve el número más pequeño del array. Asume arr no vacío y solo números.
@@ -17,6 +18,7 @@ function maximo(arr) {
 // Ejemplo: minimo([3, 1, 4, 1, 5]) -> 1.
 function minimo(arr) {
   // TODO: implement
+
 }
 
 // segundoMayor: Devuelve el segundo número más grande distinto del array.
@@ -25,6 +27,7 @@ function minimo(arr) {
 // Ejemplo: segundoMayor([3, 1, 4, 1, 5, 9, 2, 6]) -> 6.
 function segundoMayor(arr) {
   // TODO: implement
+
 }
 
 // filtrarMayores: Devuelve un nuevo array solo con los números estrictamente mayores a n.
@@ -35,6 +38,7 @@ function segundoMayor(arr) {
 //          filtrarMayores([1, 3, 5], 3)     -> [5].
 function filtrarMayores(arr, n) {
   // TODO: implement
+
 }
 
 // sumar: Devuelve la suma de todos los números del array.
@@ -43,6 +47,7 @@ function filtrarMayores(arr, n) {
 // Ejemplo: sumar([1, 2, 3, 4]) -> 10.
 function sumar(arr) {
   // TODO: implement
+
 }
 
 export { maximo, minimo, segundoMayor, filtrarMayores, sumar };

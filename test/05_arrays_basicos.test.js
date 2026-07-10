@@ -5,7 +5,7 @@ import {
   segundoMayor,
   filtrarMayores,
   sumar,
-} from "../src/04_arrays_basicos.js";
+} from "../src/05_arrays_basicos.js";
 
 describe("05 — Arrays: básicos", () => {
   describe("maximo", () => {
