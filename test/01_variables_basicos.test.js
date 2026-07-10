@@ -105,7 +105,8 @@ describe("01 — Variables y tipos básicos", () => {
     });
 
     test("es conmutativo: base*altura === altura*base", () => {
-      expect(areaRectangulo(3, 4)).toBe(areaRectangulo(4, 3));
+      expect(areaRectangulo(3, 4)).toBe(12);
+      expect(areaRectangulo(4, 3)).toBe(12);
     });
   });
 

@@ -104,6 +104,7 @@ describe("09 — Búsqueda y ordenamiento", () => {
     test("devuelve una NUEVA referencia", () => {
       const arr = [3, 1, 2];
       const sorted = bubbleSort(arr);
+      expect(sorted).toEqual([1, 2, 3]); // hace el trabajo esperado
       expect(sorted).not.toBe(arr);
     });
 
@@ -168,6 +169,7 @@ describe("09 — Búsqueda y ordenamiento", () => {
     test("devuelve una NUEVA referencia", () => {
       const arr = [{ n: 3 }, { n: 1 }];
       const sorted = ordenarPor(arr, "n");
+      expect(sorted).toEqual([{ n: 1 }, { n: 3 }]); // hace el trabajo esperado
       expect(sorted).not.toBe(arr);
     });
 

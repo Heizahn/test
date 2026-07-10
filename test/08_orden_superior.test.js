@@ -15,7 +15,8 @@ describe("08 — Funciones de orden superior", () => {
 
     test("no muta el original", () => {
       const original = [1, 2, 3];
-      miMap(original, (x) => x * 2);
+      const result = miMap(original, (x) => x * 2);
+      expect(result).toEqual([2, 4, 6]); // hace el trabajo esperado
       expect(original).toEqual([1, 2, 3]);
     });
 
@@ -69,13 +70,15 @@ describe("08 — Funciones de orden superior", () => {
 
     test("no muta el original", () => {
       const original = [1, 2, 3, 4];
-      miFilter(original, (x) => x % 2 === 0);
+      const result = miFilter(original, (x) => x % 2 === 0);
+      expect(result).toEqual([2, 4]); // hace el trabajo esperado
       expect(original).toEqual([1, 2, 3, 4]);
     });
 
     test("devuelve una NUEVA referencia", () => {
       const arr = [1, 2, 3];
       const result = miFilter(arr, () => true);
+      expect(result).toEqual([1, 2, 3]); // hace el trabajo esperado
       expect(result).not.toBe(arr);
     });
 
@@ -106,6 +109,8 @@ describe("08 — Funciones de orden superior", () => {
 
     test("array vacío SIN init devuelve undefined", () => {
       expect(miReduce([], (acc, x) => acc + x)).toBeUndefined();
+      // No basta con devolver undefined para todo; la función debe reducir arrays no vacíos.
+      expect(miReduce([1, 2, 3], (acc, x) => acc + x)).toBe(6);
     });
 
     test("array de un solo elemento con init aplica fn una vez", () => {
@@ -134,7 +139,8 @@ describe("08 — Funciones de orden superior", () => {
 
     test("no muta el array original", () => {
       const original = [1, 2, 3];
-      miReduce(original, (acc, x) => acc + x, 0);
+      const reduced = miReduce(original, (acc, x) => acc + x, 0);
+      expect(reduced).toBe(6); // hace el trabajo esperado
       expect(original).toEqual([1, 2, 3]);
     });
   });
@@ -194,7 +200,11 @@ describe("08 — Funciones de orden superior", () => {
 
     test("no muta el array original", () => {
       const original = [{ tipo: "a", n: 1 }, { tipo: "b", n: 2 }];
-      agruparPor(original, "tipo");
+      const result = agruparPor(original, "tipo");
+      expect(result).toEqual({
+        a: [{ tipo: "a", n: 1 }],
+        b: [{ tipo: "b", n: 2 }],
+      }); // hace el trabajo esperado
       expect(original).toEqual([
         { tipo: "a", n: 1 },
         { tipo: "b", n: 2 },

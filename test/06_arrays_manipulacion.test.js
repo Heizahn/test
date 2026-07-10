@@ -27,6 +27,7 @@ describe("06 — Arrays: manipulación", () => {
     test("NO muta el array original", () => {
       const original = [1, 2, 2, 3];
       const copia = eliminarDuplicados(original);
+      expect(copia).toEqual([1, 2, 3]);       // hace el trabajo esperado
       expect(original).toEqual([1, 2, 2, 3]); // sigue con duplicados
       expect(copia).not.toBe(original);       // es una nueva referencia
     });
@@ -58,6 +59,7 @@ describe("06 — Arrays: manipulación", () => {
     test("NO muta el array original", () => {
       const original = [1, [2, 3], [4]];
       const copia = aplanar(original);
+      expect(copia).toEqual([1, 2, 3, 4]);        // hace el trabajo esperado
       expect(original).toEqual([1, [2, 3], [4]]); // sigue con sub-arrays
       expect(copia).not.toBe(original);
     });
@@ -93,6 +95,7 @@ describe("06 — Arrays: manipulación", () => {
       const a = [1, 2, 3];
       const b = [2, 3, 4];
       const copia = interseccion(a, b);
+      expect(copia).toEqual([2, 3]); // hace el trabajo esperado
       expect(a).toEqual([1, 2, 3]);
       expect(b).toEqual([2, 3, 4]);
       expect(copia).not.toBe(a);
@@ -127,6 +130,7 @@ describe("06 — Arrays: manipulación", () => {
       const a = [1, 2];
       const b = [2, 3];
       const copia = union(a, b);
+      expect(copia).toEqual([1, 2, 3]); // hace el trabajo esperado
       expect(a).toEqual([1, 2]);
       expect(b).toEqual([2, 3]);
       expect(copia).not.toBe(a);
@@ -166,6 +170,7 @@ describe("06 — Arrays: manipulación", () => {
     test("NO muta el array original", () => {
       const original = [1, 2, 3, 4, 5];
       const copia = chunk(original, 2);
+      expect(copia).toEqual([[1, 2], [3, 4], [5]]); // hace el trabajo esperado
       expect(original).toEqual([1, 2, 3, 4, 5]);
       expect(copia).not.toBe(original);
     });

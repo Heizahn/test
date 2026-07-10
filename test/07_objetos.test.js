@@ -111,6 +111,7 @@ describe("07 — Objetos", () => {
       const a = { a: 1 };
       const b = { b: 2 };
       const result = mergeObjetos(a, b);
+      expect(result).toEqual({ a: 1, b: 2 }); // hace el trabajo esperado
       expect(result).not.toBe(a);
       expect(result).not.toBe(b);
     });
