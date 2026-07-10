@@ -5,7 +5,7 @@ import {
   interseccion,
   union,
   chunk,
-} from "../src/06_arrays_manipulacion.js";
+} from "../src/05_arrays_manipulacion.js";
 
 describe("06 — Arrays: manipulación", () => {
   describe("eliminarDuplicados", () => {
